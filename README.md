@@ -2,6 +2,10 @@
 
 En minimal, installerbar dashboard för Johan Isakssons appar, spel och berättelser.
 
+[Öppna dashboarden](https://izaxon.github.io/izaxon-app/)
+
+![Dashboarden i ljust läge](./docs/dashboard-2026-11-03.jpg)
+
 Vanlig HTML, CSS och JavaScript. Ingen backend, inga paketberoenden och inget byggsteg.
 
 ## Köra lokalt
@@ -22,6 +26,8 @@ python -m http.server 8080
 4. Spara och invänta GitHubs publicering.
 
 GitHub visar den publicerade adressen när publiceringen är klar. Appens relativa sökvägar, manifest och service worker fungerar både under `/izaxon-app/` och på en egen domäns rot.
+
+Repot är konfigurerat att publicera `main` från rotmappen. Ändringar på `main` publiceras automatiskt på **https://izaxon.github.io/izaxon-app/**.
 
 ## Installera appen
 
