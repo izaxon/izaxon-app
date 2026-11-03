@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="description" content="Appar, spel och berättelser av Johan Isaksson. Alla projekt på ett ställe." />
+    <meta name="application-name" content="izaxon" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="izaxon" />
+    <title>izaxon — mina projekt</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="preload" href="./assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      try {
+        const theme = localStorage.getItem('izaxon-theme');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Hoppa till projekten</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="izaxon, startsida">
+          <img class="brand-icon" src="./assets/icons/icon-192.png" width="48" height="48" alt="" />
+          <span class="brand-type">
+            <span class="brand-name">izaxon</span>
+            <span class="brand-caption">dashboard</span>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <button class="icon-button theme-button" id="theme-button" type="button" aria-label="Byt färgtema" title="Byt färgtema" hidden>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.1A8.6 8.6 0 0 1 10.9 3.5 8.6 8.6 0 1 0 20.5 13.1Z" /></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          </button>
+          <button class="button button-primary install-button" id="install-button" type="button" hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5" /></svg>
+            <span>Installera</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">Johan Isaksson / utvalda projekt</p>
+          <h1 id="page-title">Mina projekt<span class="accent">.</span></h1>
+          <p class="intro-description">Appar, spel och berättelser. Samlade på ett ställe.</p>
+        </section>
+
+        <!-- Add or edit project links here. Every card works without JavaScript. -->
+        <section class="project-grid" id="projects" aria-label="Projekt" tabindex="-1">
+          <a class="project-card" href="https://codicent.ai/" target="_blank" rel="noopener noreferrer">
+            <div class="card-top">
+              <span class="project-mark" aria-hidden="true">
+                <svg viewBox="0 0 43 43" width="34" height="34" fill="currentColor"><path d="M14.3333 38.2227H4.77778V43.0004H14.3333V38.2227ZM38.2222 0H28.6667V4.77778H38.2222V0ZM38.2222 19.1113H28.6667V23.8891H38.2222V19.1113ZM14.3333 19.1113H4.77778V23.8891H14.3333V19.1113ZM4.77778 23.8887H0V38.222H4.77778V23.8887ZM43 4.77783H38.2222V19.1112H43V4.77783ZM23.8889 19.1113H19.1111V33.4447H23.8889V19.1113ZM23.8889 9.55566H19.1111V14.3334H23.8889V9.55566Z" /></svg>
+              </span>
+              <span class="project-category">App</span>
+              <svg class="open-arrow" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </div>
+            <div class="card-copy">
+              <h2>Codicent</h2>
+              <p>Arbete, kunskap och AI på ett ställe.</p>
+            </div>
+            <span class="project-domain">codicent.ai<span class="sr-only"> (öppnas i ny flik)</span></span>
+          </a>
+
+          <a class="project-card" href="https://skreeky.dint.ai/" target="_blank" rel="noopener noreferrer">
+            <div class="card-top">
+              <span class="project-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v6m6-12v18m6-22v26m6-20v14m6-10v6" /></svg>
+              </span>
+              <span class="project-category">Röstchatt</span>
+              <svg class="open-arrow" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </div>
+            <div class="card-copy">
+              <h2>Skreeky</h2>
+              <p>Röstchatt nära dig och i delade rum.</p>
+            </div>
+            <span class="project-domain">skreeky.dint.ai<span class="sr-only"> (öppnas i ny flik)</span></span>
+          </a>
+
+          <a class="project-card" href="https://havn.grok.me/" target="_blank" rel="noopener noreferrer">
+            <div class="card-top">
+              <span class="project-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 11 6.5v13L16 29 5 22.5v-13L16 3Z" /><path d="m10 16 6-5 6 5m-10-1v7h8v-7m-5 7v-5h2v5" /></svg>
+              </span>
+              <span class="project-category">Spel</span>
+              <svg class="open-arrow" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </div>
+            <div class="card-copy">
+              <h2>Havn</h2>
+              <p>Bebygg ön, samla resurser och nå tio segerpoäng.</p>
+            </div>
+            <span class="project-domain">havn.grok.me<span class="sr-only"> (öppnas i ny flik)</span></span>
+          </a>
+
+          <a class="project-card" href="https://www.amazon.com/dp/B0HG9RPW66" target="_blank" rel="noopener noreferrer">
+            <div class="card-top">
+              <span class="project-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M26.5 18.4A11.5 11.5 0 0 1 13.6 5.5a11.5 11.5 0 1 0 12.9 12.9Z" /><path d="M23 3v6m-3-3h6" /></svg>
+              </span>
+              <span class="project-category">Bok</span>
+              <svg class="open-arrow" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg>
+            </div>
+            <div class="card-copy">
+              <h2>Moonward</h2>
+              <p>En science fiction-roman. Läs den på Kindle.</p>
+            </div>
+            <span class="project-domain">amazon.com<span class="sr-only"> (öppnas i ny flik)</span></span>
+          </a>
+        </section>
+
+        <p class="status-note" id="app-status" role="status" aria-live="polite"></p>
+      </main>
+
+      <footer class="site-footer">
+        <span>Johan Isaksson</span>
+        <a class="footer-link" href="https://github.com/izaxon" target="_blank" rel="noopener noreferrer">
+          Fler projekt på GitHub
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg>
+          <span class="sr-only"> (öppnas i ny flik)</span>
+        </a>
+      </footer>
+    </div>
+
+    <dialog id="install-dialog" aria-labelledby="install-title" aria-describedby="install-instructions">
+      <div class="dialog-heading">
+        <h2 id="install-title">Installera izaxon</h2>
+        <button class="icon-button" id="close-install" type="button" aria-label="Stäng installationshjälpen" autofocus>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+        </button>
+      </div>
+      <div id="install-instructions">Öppna webbläsarens meny och välj att lägga till izaxon på hemskärmen.</div>
+    </dialog>
+
+    <aside class="update-notice" id="update-notice" aria-label="En ny version finns" hidden>
+      <p>En ny version är redo.</p>
+      <button class="button button-primary" id="update-button" type="button">Uppdatera</button>
+    </aside>
+  </body>
+</html>
