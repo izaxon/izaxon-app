@@ -2,7 +2,7 @@
 
 En minimal, installerbar dashboard för Johan Isakssons appar, spel och berättelser.
 
-[Öppna dashboarden](https://izaxon.github.io/izaxon-app/)
+[Öppna dashboarden](https://app.izaxon.com/)
 
 ![Dashboarden i ljust läge](./docs/dashboard-2026-11-03.jpg)
 
@@ -27,7 +27,7 @@ python -m http.server 8080
 
 GitHub visar den publicerade adressen när publiceringen är klar. Appens relativa sökvägar, manifest och service worker fungerar både under `/izaxon-app/` och på en egen domäns rot.
 
-Repot är konfigurerat att publicera `main` från rotmappen. Ändringar på `main` publiceras automatiskt på **https://izaxon.github.io/izaxon-app/**.
+Repot är konfigurerat att publicera `main` från rotmappen. `CNAME` anger den egna domänen, och ändringar på `main` publiceras automatiskt på **https://app.izaxon.com/**.
 
 ## Installera appen
 
@@ -48,6 +48,10 @@ Stilen finns i `styles.css`. Beteenden som installation och uppdatering finns i 
 Färger, typografi och geometri utgår från det uttryckliga blocket `@codicent-web-tokens` i [Codicents webbplats](https://github.com/izaxon/Codicent.ai/blob/main/index.html): Geist och Geist Mono, plana ytor, raka hörn, blå accent och systemets ljusa eller mörka läge. Den separata izaxon-ikonen används som appidentitet.
 
 Typsnitten och ikonerna ligger lokalt i `assets/`.
+
+Alla sju projektkort har även en lokal bild i `assets/projects/`. Bilden får en egen kolumn bredvid beskrivningen, medan projektnamnet använder hela kortbredden. Utsnitt, rundade hörn och ljusjustering styrs i `styles.css`; originalbilderna behålls. NextPhase visas i sin helhet, Codicent använder övre vänstra fjärdedelen och qrit samt Skreeky beskärs till själva ikonen respektive knappen.
+
+Tidigare designförslag finns i `docs/design-previews/2026-11-08/`. De är historiska arbetsbilder, inte skärmbilder av den publicerade versionen; `havn-preview` är ett felbeskuret försök.
 
 ## Offline och uppdateringar
 
