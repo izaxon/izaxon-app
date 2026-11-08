@@ -49,7 +49,7 @@ Färger, typografi och geometri utgår från det uttryckliga blocket `@codicent-
 
 Typsnitten och ikonerna ligger lokalt i `assets/`.
 
-Alla sju projektkort har även en lokal bild i `assets/projects/`. Bilden får en egen kolumn bredvid beskrivningen, medan projektnamnet använder hela kortbredden. Utsnitt, rundade hörn och ljusjustering styrs i `styles.css`; originalbilderna behålls. NextPhase visas i sin helhet, Codicent använder övre vänstra fjärdedelen och qrit samt Skreeky beskärs till själva ikonen respektive knappen.
+Projektbilderna ligger lokalt i `assets/projects/`. Bildkort ger bilden en egen kolumn bredvid beskrivningen, medan projektnamnet använder hela kortbredden. Utsnitt, rundade hörn och ljusjustering styrs i `styles.css`; originalbilderna behålls. NextPhase visas i sin helhet, Codicent använder övre vänstra fjärdedelen och qrit samt Skreeky beskärs till själva ikonen respektive knappen.
 
 Tidigare designförslag finns i `docs/design-previews/2026-11-08/`. De är historiska arbetsbilder, inte skärmbilder av den publicerade versionen; `havn-preview` är ett felbeskuret försök.
 
