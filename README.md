@@ -4,7 +4,7 @@ En minimal, installerbar dashboard för Johan Isakssons appar, spel och berätte
 
 [Öppna dashboarden](https://app.izaxon.com/)
 
-![Dashboarden i ljust läge](./docs/dashboard-2026-11-03.jpg)
+![Den publicerade dashboarden i ljust läge](./docs/dashboard-2026-11-08.jpg)
 
 Vanlig HTML, CSS och JavaScript. Ingen backend, inga paketberoenden och inget byggsteg.
 
@@ -57,7 +57,7 @@ Tidigare designförslag finns i `docs/design-previews/2026-11-08/`. De är histo
 
 Efter ett lyckat första besök sparar `sw.js` själva dashboarden och dess lokala tillgångar. **De länkade projekten och Amazon kräver fortfarande internet.** Inga externa sidor eller API-anrop sparas i appens cache.
 
-HTML, CSS, JavaScript och manifest hämtas från nätet när det går och använder det installerade appskalet som reserv. Ikoner och typsnitt hämtas från appens cache. En ny service worker väntar tills användaren väljer att uppdatera, eller tills alla öppna appfönster har stängts. Cachelagringen är avgränsad till appens eget scope och påverkar inte andra appar på samma domän.
+HTML, CSS, JavaScript och manifest hämtas från nätet när det går och använder det installerade appskalet som reserv. Projektbilder, ikoner och typsnitt hämtas från appens cache. En ny service worker väntar tills användaren väljer att uppdatera, eller tills alla öppna appfönster har stängts. Cachelagringen är avgränsad till appens eget scope och påverkar inte andra appar på samma domän.
 
 **Ändra `VERSION` högst upp i `sw.js` vid varje ändring av en fil i `APP_SHELL`.** Publicera hela uppdateringen tillsammans. Om du lägger till eller tar bort en lokal tillgång, uppdatera även listan `APP_SHELL`. En misslyckad nedladdning av någon fil hindrar den nya versionen från att installeras; den tidigare service workern kan fortsätta användas.
 
