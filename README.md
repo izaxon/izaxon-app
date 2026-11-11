@@ -43,6 +43,8 @@ Projektkorten finns direkt i `index.html`, så länkarna fungerar även utan Jav
 
 Stilen finns i `styles.css`. Beteenden som installation och uppdatering finns i `app.js`.
 
+Palmemordet-kortet har två separata länkar: rapporten är kortets primära mål och YouTube-länken ligger i kortets sidfot. Kort med flera mål använder `article` och klasserna `project-card-with-links`, `project-main-link` och `project-video-link`, så att länkarna förblir självständiga utan nästlade `a`-element.
+
 ## Design
 
 Färger, typografi och geometri utgår från det uttryckliga blocket `@codicent-web-tokens` i [Codicents webbplats](https://github.com/izaxon/Codicent.ai/blob/main/index.html): Geist och Geist Mono, plana ytor, raka hörn, blå accent och systemets ljusa eller mörka läge. Den separata izaxon-ikonen används som appidentitet.
