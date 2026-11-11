@@ -1,5 +1,5 @@
 /* Bump VERSION whenever a file in APP_SHELL changes. */
-const VERSION = '2026-11-08-11';
+const VERSION = '2026-11-11-1';
 const SCOPE = new URL(self.registration.scope);
 const CACHE_PREFIX = `izaxon-app-shell:${SCOPE.pathname}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;

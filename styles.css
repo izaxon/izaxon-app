@@ -153,6 +153,14 @@ h1 { margin: 0; font-size: clamp(34px, 5vw, 48px); font-weight: 500; line-height
 .card-copy h2 { margin: 0; font-size: 23px; font-weight: 500; line-height: 1.2; letter-spacing: -.035em; }
 .card-copy p { margin: 9px 0 0; color: var(--cc-ink-2); font-size: 14px; line-height: 1.6; }
 .project-domain { display: block; margin-top: auto; padding-top: 23px; color: var(--cc-muted); font: 11px/1.5 var(--cc-mono); overflow-wrap: anywhere; }
+.project-card-with-links { position: relative; }
+.project-main-link::after { content: ''; position: absolute; inset: 0; }
+.project-main-link:focus-visible { outline: none; }
+.project-main-link:focus-visible::after { outline: 2px solid var(--cc-accent); outline-offset: 5px; }
+.project-card-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; margin-top: auto; padding-top: 23px; }
+.project-card-footer .project-domain { margin-top: 0; padding-top: 0; }
+.project-video-link { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 6px; min-height: 28px; color: var(--cc-accent); font-size: 12px; line-height: 1.5; }
+.project-video-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .status-note { margin: 18px 0 0; min-height: 1.5em; color: var(--cc-muted); font-size: 13px; line-height: 1.5; }
 .status-note:empty { margin: 0; min-height: 0; }
 
@@ -201,6 +209,7 @@ dialog::backdrop { background: rgba(0, 0, 0, .55); }
   .project-card-artwork .card-copy h2 { margin-top: 18px; }
   .card-copy h2 { font-size: 22px; }
   .project-domain { padding-top: 19px; }
+  .project-card-footer { padding-top: 19px; }
   .site-footer { padding-top: 24px; font-size: 11px; }
   .update-notice { gap: 14px; padding: 12px; }
   .update-notice p { font-size: 13px; }
